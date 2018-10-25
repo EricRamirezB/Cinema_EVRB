@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cinema_EVRB.Views.FuncionesPage" >
+
+    <Grid>                                                 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Text="Titulo"></Label>
+        <Label Grid.Row="0" Grid.Column="1" Text="{Binding Nombre}"></Label>
+        
+        <Label Grid.Row="1" Grid.Column="0" Text="Fecha" />
+        <Label Grid.Row="1" Grid.Column="1" Text="{Binding Fechaestreno}"></Label>
+
+        <Label Grid.Row="2" Grid.ColumnSpan="2" Text="Cantidad de Boletas"></Label>
+        <Label Grid.Row="2" Grid.Column="1" Text=""></Label>
+    </Grid>
+
+</ContentPage>

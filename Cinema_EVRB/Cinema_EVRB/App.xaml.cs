@@ -1,3 +1,4 @@
+using Cinema_EVRB.Views;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -11,7 +12,7 @@ namespace Cinema_EVRB
 		{
 			InitializeComponent();
 
-			MainPage = new MainPage();
+			MainPage = new CarteleraPage();
 		}
 
 		protected override void OnStart ()
