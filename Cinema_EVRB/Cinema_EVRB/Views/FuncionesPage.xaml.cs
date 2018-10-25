@@ -13,7 +13,7 @@ namespace Cinema_EVRB.Views
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class FuncionesPage : ContentPage
 	{
-		public FuncionesPage (FuncionesModel funcion)
+		public FuncionesPage (CinemaModel funcion)
 		{
 			InitializeComponent ();
             BindingContext = funcion;

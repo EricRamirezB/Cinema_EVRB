@@ -38,7 +38,7 @@ namespace Cinema_EVRB.Views
 
         private async void PeliculaSeleccionada(object sender, SelectedItemChangedEventArgs e)
         {
-            var funcion = e.SelectedItem as FuncionesModel;
+            var funcion = e.SelectedItem as CinemaModel;
             await Navigation.PushModalAsync(new FuncionesPage(funcion));
         }
     }
